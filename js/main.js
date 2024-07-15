@@ -50,8 +50,8 @@ $(window).on("scroll", () => {
 });
 
 $(document).ready(() => {
-  $(".spinner").fadeOut(500, () => {
-    $(".loadingScreen").fadeOut(500, () => {
+  $(".spinner").fadeOut(300, () => {
+    $(".loadingScreen").fadeOut(() => {
       $("body").css("overflow", "auto");
     });
   });
