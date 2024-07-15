@@ -1,0 +1,141 @@
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 44px;
+  }
+  #Works .modal-dialog {
+    max-width: 55%;
+  }
+  #Works .carousel-control-prev {
+    left: -45%;
+  }
+  #Works .carousel-control-next {
+    right: -45%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* navbar */
+  .navbar-nav {
+    background: transparent;
+  }
+  .navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+  }
+  .navbar .nav-link {
+    position: relative;
+    color: #fff;
+  }
+  .navbar.scrolled .nav-link {
+    color: var(--mainColor);
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
+    color: #fff;
+  }
+  .navbar.scrolled .navbar-nav .nav-link.active,
+  .navbar.scrolled .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+  }
+  .navbar.scrolled .navbar-brand {
+    color: var(--mainColor);
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-right: 20px;
+  }
+  .navbar .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 100%;
+    border-bottom: solid white 2px;
+    transition: all 0.5s;
+  }
+  .navbar-nav .nav-link.active::after,
+  .navbar-nav .nav-link.show::after {
+    width: 87%;
+  }
+  .navbar.scrolled .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 100%;
+    border-bottom: solid var(--mainColor) 2px;
+    transition: all 0.5s;
+  }
+  .navbar.scrolled .navbar-nav .nav-link.active::after,
+  .navbar.scrolled .navbar-nav .nav-link.show::after {
+    width: 87%;
+  }
+  /* .navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    top: 100%;
+    left: 0;
+    border-bottom: #fff solid 2px;
+    padding-bottom: 0;
+    transition: all 0.5s;
+  }
+  .navbar-nav .nav-link.active::after, .navbar-nav .nav-link.show::after{
+    width: 87%;
+  }
+  
+  .navbar.scrolled .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    top: 100%;
+    left: 0;
+    border-bottom: var(--mainColor) solid 2px;
+    padding-bottom: 0;
+    transition: all 0.5s;
+  }
+.navbar.scrolled .nav-link.active::after, .navbar.scrolled .nav-link.show::after{
+    width: 87%;
+  } */
+  #Works .modal-dialog {
+    max-width: 44%;
+  }
+  #Works .carousel-control-prev {
+    left: -70%;
+  }
+  #Works .carousel-control-next {
+    right: -70%;
+  }
+  #Clients p {
+    padding-inline: 100px;
+  }
+  #Contact .container {
+    width: 75%;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 60px;
+  }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    width: 76%;
+  }
+  #Contact .container {
+    width: 65%;
+  }
+}
